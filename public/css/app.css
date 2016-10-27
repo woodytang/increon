@@ -1,0 +1,141 @@
+@charset "UTF-8";
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif; }
+
+html {
+  width: 100%;
+  height: 100%; }
+
+section {
+  width: 100%; }
+
+#app {
+  width: 100%;
+  height: 100%; }
+
+.brand-list-item {
+  position: relative;
+  width: 100%;
+  height: 230px;
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; }
+  .brand-list-item .brand-title {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #cccccc;
+    opacity: 0.8;
+    font-size: 30px;
+    font-weight: bolder; }
+  .brand-list-item .dk {
+    color: #C5A4A8; }
+
+.brand {
+  height: 100%;
+  overflow: hidden; }
+  .brand .brand-carousel .mint-swipe {
+    height: 100%; }
+    .brand .brand-carousel .mint-swipe .mint-swipe-item {
+      background-color: #cccccc; }
+      .brand .brand-carousel .mint-swipe .mint-swipe-item .img-holder {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover; }
+  .brand .nav {
+    width: 100%;
+    height: 70px; }
+    .brand .nav .btn {
+      display: inline-block;
+      position: relative;
+      width: 50%;
+      height: 100%;
+      float: left;
+      padding-top: 13px;
+      background-color: #686868; }
+      .brand .nav .btn img {
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin: 0 auto;
+        vertical-align: middle; }
+      .brand .nav .btn .text {
+        display: block;
+        color: #fff;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 13px;
+        line-height: 38px; }
+    .brand .nav .active {
+      position: relative;
+      background-color: #C1C1C1 !important; }
+      .brand .nav .active:after {
+        content: "▼";
+        position: absolute;
+        bottom: -20px;
+        left: 44%;
+        color: #C1C1C1;
+        font-size: 23px; }
+  .brand .content {
+    width: 100%; }
+    .brand .content .intro {
+      padding: 10px;
+      padding-top: 20px;
+      color: grey; }
+    .brand .content .locations {
+      width: 100%;
+      overflow-y: scroll;
+      overflow-x: hidden; }
+      .brand .content .locations .addr-wrap {
+        width: 100%;
+        min-height: 100px;
+        background-color: #f2f2f2; }
+        .brand .content .locations .addr-wrap .addr {
+          width: 100%;
+          padding: 15px 10px 2px 10px;
+          background-color: #f2f2f2; }
+          .brand .content .locations .addr-wrap .addr p {
+            vertical-align: middle;
+            font-size: 12px;
+            line-height: 10px; }
+            .brand .content .locations .addr-wrap .addr p img {
+              padding-right: 5px;
+              vertical-align: middle; }
+        .brand .content .locations .addr-wrap .b-info {
+          width: 100%;
+          min-height: 30px;
+          color: #fff;
+          background-color: #dddbdb; }
+          .brand .content .locations .addr-wrap .b-info ul {
+            display: -webkit-box;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            padding-right: 10px;
+            -webkit-box-align: center;
+            align-items: center;
+            -webkit-box-orient: horizontal;
+            -webkit-box-direction: reverse;
+            flex-direction: row-reverse;
+            -webkit-box-pack: start;
+            justify-content: flex-start; }
+            .brand .content .locations .addr-wrap .b-info ul li {
+              display: inline-block;
+              width: 25px;
+              height: 25px;
+              margin-top: 2px;
+              margin-left: 8px;
+              border-radius: 50% 50%;
+              background-color: #999595;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: 70% 70%; }
+
+/*# sourceMappingURL=app.css.map */
