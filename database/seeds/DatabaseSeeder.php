@@ -16,5 +16,8 @@ class DatabaseSeeder extends Seeder
             'name'=>'admin',
             'password'=>bcrypt('admin'),
         ]);
+
+        $this->call(BrandSeeder::class);
+        $this->call(LocationSeeder::class);
     }
 }

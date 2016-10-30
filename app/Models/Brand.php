@@ -22,10 +22,10 @@ class Brand extends Model
 	// protected $fillable = [];
 	// protected $hidden = [];
     // protected $dates = [];
-
+/*
 	protected $casts = [
 			'cover_img' => 'array'
-	];
+	];*/
 
 	/*
 	|--------------------------------------------------------------------------
@@ -58,11 +58,11 @@ class Brand extends Model
 	| MUTATORS
 	|--------------------------------------------------------------------------
 	*/
-	public function setCoverImgAttribute($value)
+/*	public function setCoverImgAttribute($value)
 	{
 		$attribute_name = "cover_img";
 		$disk = "uploads";
 		$destination_path = "cover_imgs";
 		$this->uploadMultipleFilesToDisk($value, $attribute_name, $disk, $destination_path);
-	}
+	}*/
 }

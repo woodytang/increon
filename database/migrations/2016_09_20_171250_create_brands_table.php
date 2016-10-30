@@ -19,7 +19,8 @@ class CreateBrandsTable extends Migration
             $table->text('desc');
             $table->string('name_en');
             $table->text('desc_en');
-            $table->string('cover_img');
+            //$table->string('cover_img');
+            $table->string('cover');
             $table->timestamps();
         });
     }

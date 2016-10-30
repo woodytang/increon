@@ -36,6 +36,5 @@ Elixir.webpack.mergeConfig({
 });
 
 elixir(mix => {
-    mix.sass('app.scss')
-       .webpack('app.js');
+    mix.sass('main.scss');
 });
