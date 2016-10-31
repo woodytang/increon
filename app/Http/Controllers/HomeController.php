@@ -18,4 +18,9 @@ class HomeController extends Controller
         $locations = $brand->locations;
         return view('brand',compact('brand','locations'));
     }
+
+    public function listBrands(){
+        $brands = Brand::all();
+        return view('iconBrand',compact('brands'));
+    }
 }

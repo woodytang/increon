@@ -236,3 +236,49 @@ section {
     padding: 10px;
   }
 }
+.brand-list-bg{
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/bg_brand_list.jpg');
+  .bg-wrap{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    background-color: rgba(0,0,0,0.8);
+    padding-top: 20px;
+    h3{
+      text-align: center;
+      color: #fff;
+    }
+
+  }
+}
+.brand-list-box{
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  .brand-wrap{
+    width: 85px;
+    height: 110px;
+    margin: 10px;
+    box-sizing: border-box;
+
+    .brand-list-item{
+      width: 85px;
+      height: 85px;
+      border-radius: 50% 50%;
+    }
+    .brand-title{
+      padding-top: 10px;
+      display: block;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+    }
+  }
+}

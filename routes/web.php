@@ -13,6 +13,8 @@
 
 Route::get('/', 'HomeController@index');
 
+Route::get('/brands', 'HomeController@listBrands');
+
 Route::get('/brand/{id}', 'HomeController@showBrand');
 
 
