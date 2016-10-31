@@ -67,9 +67,9 @@
                     </div>
                     <div class="b-info">
                         <ul>
-                            <li style="background-image:url('/img/tel.svg')">
+                            <li style="background-image:url('/img/tel.svg')" class="phone-call">
                                 <div class="hidden-text">
-                                    <div class="call-wrap">
+                                    {{--<div class="call-wrap">
                                         <div class="call" data-phone="{{$location->phone}}">
                                             <img src="/img/call.svg" alt="">
                                             <span>拨打电话</span>
@@ -78,7 +78,7 @@
                                             <img src="/img/phonebook.svg" alt="">
                                             <span>添加到电话本</span>
                                         </div>
-                                    </div>
+                                    </div>--}}
                                 </div>
                             </li>
                             <li style="background-image:url('/img/cab.svg')"><div class="hidden-text"><h3>司机先生/女士:</h3><p>请您带我到:</p><p>{{$location->addr}}</p></div></li>
@@ -172,14 +172,9 @@
                     event.stopPropagation();
                 });
 
-                $('.call').on('click',function(){
-                    console.log("tel:"+$(this).data('phone'));
+                $('.phone-call').on('click',function(){
                     window.location.href = "tel:"+$(this).data('phone');
                 });
-                $('.add').on('click',function(){
-                    window.location.href = "wtai://wp/ap;"+$(this).data('phone');
-                });
-
             });
         </script>
 </body>
