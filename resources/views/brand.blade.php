@@ -67,7 +67,8 @@
                     </div>
                     <div class="b-info">
                         <ul>
-                            <li style="background-image:url('/img/tel.svg')"><div class="hidden-text">
+                            <li style="background-image:url('/img/tel.svg')">
+                                <div class="hidden-text">
                                     <div class="call-wrap">
                                         <div class="call" data-phone="{{$location->phone}}">
                                             <img src="/img/call.svg" alt="">
@@ -78,7 +79,8 @@
                                             <span>添加到电话本</span>
                                         </div>
                                     </div>
-                                </div></li>
+                                </div>
+                            </li>
                             <li style="background-image:url('/img/cab.svg')"><div class="hidden-text"><h3>司机先生/女士:</h3><p>请您带我到:</p><p>{{$location->addr}}</p></div></li>
                             <li style="background-image:url('/img/wifi.svg')"><div class="hidden-text"><h3>本店提供免费wifi, 账号及密码是:</h3><p>账号: {{$location->wifi_account}}</p><p>密码: {{$location->wifi_psw}}</p></div></li>
                         </ul>
@@ -99,6 +101,7 @@
             <div class="content">
 
             </div>
+
         </div>
         </div>
         <script src="/js/jquery-2.2.0.min.js" charset="utf-8"></script>
@@ -156,17 +159,21 @@
                 });
 
                 $('.b-info li').on('click',function(){
-                    var res = $(this).find('.hidden-text').html();
+                    var res = $(this).find('.hidden-text').clone(true);
                     $('.popup').css('display','flex');
-                    $('.popup .content').html(res);
+                    $('.popup .content').append(res);
                 });
                 $('.popup').on('click',function(){
                     $(this).hide();
+                    $('.popup .content').html('');
                 });
+
                 $('.popup .content').on('click',function(event){
                     event.stopPropagation();
                 });
+
                 $('.call').on('click',function(){
+                    console.log("tel:"+$(this).data('phone'));
                     window.location.href = "tel:"+$(this).data('phone');
                 });
                 $('.add').on('click',function(){
