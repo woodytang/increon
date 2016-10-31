@@ -173,7 +173,9 @@
                 });
 
                 $('.phone-call').on('click',function(){
+                    $('.popup').hide();
                     window.location.href = "tel:"+$(this).data('phone');
+
                 });
             });
         </script>
