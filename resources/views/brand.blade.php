@@ -67,8 +67,19 @@
                     </div>
                     <div class="b-info">
                         <ul>
-                            <li style="background-image:url('/img/tel.svg')"></li>
-                            <li style="background-image:url('/img/cab.svg')"><div class="hidden-text"><h3>司机先生:</h3><p>请您带我到:</p><p>{{$location->addr}}</p></div></li>
+                            <li style="background-image:url('/img/tel.svg')"><div class="hidden-text">
+                                    <div class="call-wrap">
+                                        <div class="call" data-phone="{{$location->phone}}">
+                                            <img src="/img/call.svg" alt="">
+                                            <span>拨打电话</span>
+                                        </div>
+                                        <div class="add" data-phone="{{$location->phone}}">
+                                            <img src="/img/phonebook.svg" alt="">
+                                            <span>添加到电话本</span>
+                                        </div>
+                                    </div>
+                                </div></li>
+                            <li style="background-image:url('/img/cab.svg')"><div class="hidden-text"><h3>司机先生/女士:</h3><p>请您带我到:</p><p>{{$location->addr}}</p></div></li>
                             <li style="background-image:url('/img/wifi.svg')"><div class="hidden-text"><h3>本店提供免费wifi, 账号及密码是:</h3><p>账号: {{$location->wifi_account}}</p><p>密码: {{$location->wifi_psw}}</p></div></li>
                         </ul>
                     </div>
@@ -154,6 +165,12 @@
                 });
                 $('.popup .content').on('click',function(event){
                     event.stopPropagation();
+                });
+                $('.call').on('click',function(){
+                    window.location.href = "tel:"+$(this).data('phone');
+                });
+                $('.add').on('click',function(){
+                    window.location.href = "wtai://wp/ap;"+$(this).data('phone');
                 });
 
             });

@@ -216,6 +216,36 @@ section {
   background: #686868;
 }
 
+.call-wrap{
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  .call{
+
+    img{
+      width: 40px;
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 15px;
+    }
+    span{
+      text-align: center;
+    }
+  }
+  .add{
+    img{
+      width: 40px;
+      display: block;
+      margin: 0 auto;
+      padding-bottom: 15px;
+    }
+    span{
+      text-align: center;
+    }
+  }
+}
+
 .popup{
   z-index:9999;
   background: rgba(0,0,0,0.7);
@@ -233,7 +263,7 @@ section {
     width: 90%;
     border-radius: 5px 5px;
     color:#fff;
-    padding: 10px;
+    padding: 15px;
   }
 }
 .brand-list-bg{
