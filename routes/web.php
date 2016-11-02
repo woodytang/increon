@@ -17,6 +17,10 @@ Route::get('/brands', 'HomeController@listBrands');
 
 Route::get('/brand/{id}', 'HomeController@showBrand');
 
+Route::get('/lang', 'HomeController@showLang');
+
+Route::get('/brand/{id}/locations', 'HomeController@listBrandLocations');
+
 
 
 Route::group(['namespace' => 'Admin','prefix'=>'admin'], function () {

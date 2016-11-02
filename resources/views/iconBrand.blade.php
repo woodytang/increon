@@ -28,7 +28,7 @@
 <script src="/js/jquery-2.2.0.min.js" charset="utf-8"></script>
 <script type="text/javascript">
     $('.brand-list-item').on('click',function(){
-        window.location="/brand/"+$(this).data('id');
+        window.location="/brand/"+$(this).data('id')+"/locations";
     });
 </script>
 

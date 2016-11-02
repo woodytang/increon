@@ -23,4 +23,14 @@ class HomeController extends Controller
         $brands = Brand::all();
         return view('iconBrand',compact('brands'));
     }
+
+    public function showLang(){
+        return view('lang');
+    }
+
+    public function listBrandLocations($id){
+        $brand= Brand::findOrFail($id);
+        $locations = $brand->locations;
+        return view('locations',compact('locations'));
+    }
 }
