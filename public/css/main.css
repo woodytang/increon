@@ -40,10 +40,9 @@ section {
   height: 100%;
   background-color: #f2f2f2;
   position: relative;
-  width: 100%;
-  overflow: hidden; }
+  width: 100%; }
   .brand .brand-carousel {
-    height: 100%; }
+    height: 40%; }
     .brand .brand-carousel .swiper-container {
       height: 100%; }
       .brand .brand-carousel .swiper-container .swiper-wrapper {
@@ -56,154 +55,59 @@ section {
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover; }
-  .brand .nav {
-    position: fixed;
-    bottom: 13px;
-    left: 0;
+  .brand .desc {
     width: 100%;
-    height: 70px;
-    z-index: 999; }
-    .brand .nav .btn {
-      display: inline-block;
-      position: relative;
-      width: 50%;
-      height: 100%;
-      float: left;
-      padding-top: 13px;
-      background-color: #686868; }
-      .brand .nav .btn img {
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin: 0 auto;
-        vertical-align: middle; }
-      .brand .nav .btn .text {
-        display: block;
-        color: #fff;
-        text-align: center;
-        vertical-align: middle;
-        font-size: 13px;
-        line-height: 38px; }
-    .brand .nav .active {
-      position: relative;
-      background-color: #C1C1C1 !important; }
-      .brand .nav .active:after {
-        content: "▼";
-        position: absolute;
-        bottom: -20px;
-        left: 44%;
-        color: #C1C1C1;
-        font-size: 23px; }
-  .brand .content {
+    padding: 15px;
+    box-sizing: border-box;
+    padding-bottom: 30px; }
+  .brand .banner {
     width: 100%;
-    background-color: #f2f2f2; }
-    .brand .content .intro {
-      display: none;
-      padding: 10px;
-      padding-top: 20px;
-      color: grey;
-      font-weight: 200; }
-    .brand .content .locations {
-      display: none;
-      width: 100%; }
-      .brand .content .locations .addr-wrap {
+    background-color: #cccccc;
+    height: 90px; }
+    .brand .banner:after {
+      content: "Banner";
+      color: #fff;
+      text-align: center;
+      display: block;
+      line-height: 90px; }
+  .brand .locations {
+    width: 100%; }
+    .brand .locations ul {
+      list-style: none;
+      margin: 0 0;
+      padding: 0 0; }
+      .brand .locations ul li {
+        display: block;
         width: 100%;
-        min-height: 100px;
-        background-color: #f2f2f2; }
-        .brand .content .locations .addr-wrap .addr {
-          width: 100%;
-          padding: 15px 10px 2px 10px;
-          background-color: #f2f2f2; }
-          .brand .content .locations .addr-wrap .addr p {
-            vertical-align: middle;
-            font-size: 12px;
-            line-height: 10px; }
-            .brand .content .locations .addr-wrap .addr p img {
-              padding-right: 5px;
-              vertical-align: middle; }
-        .brand .content .locations .addr-wrap .b-info {
-          width: 100%;
-          min-height: 30px;
-          color: #fff;
-          background-color: #dddbdb; }
-          .brand .content .locations .addr-wrap .b-info ul {
-            display: -webkit-box;
-            display: flex;
-            margin: 0;
-            padding: 0;
-            padding-right: 10px;
-            -webkit-box-align: center;
-            align-items: center;
-            -webkit-box-orient: horizontal;
-            -webkit-box-direction: reverse;
-            flex-direction: row-reverse;
-            -webkit-box-pack: start;
-            justify-content: flex-start; }
-            .brand .content .locations .addr-wrap .b-info ul li {
-              display: inline-block;
-              width: 25px;
-              height: 25px;
-              margin-top: 2px;
-              margin-left: 8px;
-              border-radius: 50% 50%;
-              background-color: #999595;
-              background-repeat: no-repeat;
-              background-position: center;
-              background-size: 70% 70%; }
-              .brand .content .locations .addr-wrap .b-info ul li .hidden-text {
-                display: none; }
+        height: 160px;
+        background-color: #ccc;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-bottom: 5px;
+        display: -webkit-box;
+        display: flex;
+        -webkit-box-pack: end;
+        justify-content: flex-end;
+        -webkit-box-align: end;
+        align-items: flex-end; }
+        .brand .locations ul li h3 {
+          padding-right: 20px;
+          color: #fff; }
 
 .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
-  bottom: 95px;
+  bottom: 25px;
   left: 0;
-  width: 100%; }
+  width: 90%;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  padding-right: 30px; }
 
 .swiper-pagination-bullet-active {
   opacity: 1;
   background: #686868; }
-
-.call-wrap {
-  height: 250px;
-  display: -webkit-box;
-  display: flex;
-  justify-content: space-around;
-  -webkit-box-align: center;
-  align-items: center; }
-  .call-wrap .call img {
-    width: 40px;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 15px; }
-  .call-wrap .call span {
-    text-align: center; }
-  .call-wrap .add img {
-    width: 40px;
-    display: block;
-    margin: 0 auto;
-    padding-bottom: 15px; }
-  .call-wrap .add span {
-    text-align: center; }
-
-.popup {
-  z-index: 9999;
-  background: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  -webkit-box-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  align-items: center; }
-  .popup .content {
-    min-height: 250px;
-    background-color: rgba(0, 0, 0, 0.9);
-    width: 90%;
-    border-radius: 5px 5px;
-    color: #fff;
-    padding: 15px; }
 
 .brand-list-bg {
   background-position: center;

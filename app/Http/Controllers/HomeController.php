@@ -16,7 +16,7 @@ class HomeController extends Controller
     public function showBrand($id){
         $brand= Brand::findOrFail($id);
         $locations = $brand->locations;
-        return view('brand',compact('brand','locations'));
+        return view('brand1',compact('brand','locations'));
     }
 
     public function listBrands(){
